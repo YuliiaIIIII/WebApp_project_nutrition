@@ -5,15 +5,15 @@ export const ingredientsApi = createApi({
   reducerPath: 'ingredientsApi',
   baseQuery: fetchBaseQuery({ baseUrl: 'https://api.spoonacular.com' }),
   endpoints: (builder) => ({
-    // getByIngridients: builder.query({
-    //   query: (ingredients) => ({
-    //     url: "/recipes/findByIngredients", 
-    //     params: {
-    //       ingredients,
-    //       apiKey
-    //     }
-    //   }),
-    // }),
+    getByIngridients: builder.query({
+      query: (ingredients) => ({
+        url: "/recipes/findByIngredients", 
+        params: {
+          ingredients,
+          apiKey
+        }
+      }),
+    }),
     getByNutrients: builder.query(
       {
         query: (maxCalories) => ({
