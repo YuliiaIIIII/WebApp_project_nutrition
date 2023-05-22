@@ -24,9 +24,20 @@ export const ingredientsApi = createApi({
             }
           }),
         }),
+    getRecipesInformation: builder.query(
+      {
+        query: (id) => ({
+            url: `/recipes/${id}/information`,
+            params: {
+              id,
+              includeNutrition: true,
+              apiKey
+            }
+          }),
+        }),
    }),
 })
 
 // Export hooks for usage in functional components, which are
 // auto-generated based on the defined endpoints
-export const { useGetByIngridientsQuery, useGetByNutrientsQuery } = ingredientsApi;
+export const { useGetByIngridientsQuery, useGetByNutrientsQuery, useGetRecipesInformationQuery } = ingredientsApi;
