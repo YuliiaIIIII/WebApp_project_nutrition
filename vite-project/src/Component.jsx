@@ -3,7 +3,7 @@ function Component({ receipt, func }) {
   return (
     <div
       id='userRequest' 
-      className='shadow-lg bg-orange-50 w-10/12 block ml-auto mr-auto rounded-xl border-indigo-400 border-2 md:flex md:flex-row lg:w-11/12 xlg:w-11/12 xlg:flex-col xlg:w-4/5'
+      className='shadow-lg bg-orange-50 w-10/12 block ml-auto mr-auto rounded-xl border-indigo-800 border-2 md:flex md:flex-row lg:w-11/12 xlg:w-11/12 xlg:flex-col xlg:w-4/5'
       onClick={() => func(receipt.id)}
       >
       <div className = "bg-no-repeat bg-cover rounded-md md:w-1/2 xlg:w-full">
