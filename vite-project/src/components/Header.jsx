@@ -6,7 +6,8 @@ function Header(){
           <a href="#" className="-m-1.5 p-1.5"> 
             <img 
               className="h-8 lg:h-12 xlg:h-14 w-auto mr-5" 
-              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" 
+              // src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" 
+              src="/src/img/mark.svg" 
               alt="logo">
             </img>
           </a>
@@ -19,4 +20,4 @@ function Header(){
   )
 }
   
-export default Header
+export default Header;

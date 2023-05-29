@@ -1,5 +1,4 @@
-import { Routes, Route, Link } from "react-router-dom"
-import About from "./About"
+import { Link } from "react-router-dom"
 
 function Footer(){
   return(
@@ -8,9 +7,9 @@ function Footer(){
     <div className='mt-3'>
       <Link 
       className='p-1 mr-2 font-semibold underline xlg:text-xl hover:text-white hover:text-2xl'
-      to='/#'
+      to='/'
       >
-      Contacts
+      Home
       </Link>
     </div>
     <div className='mt-3'>

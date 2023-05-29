@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Component from './Component.jsx'
-import { useGetByIngridientsQuery, useGetByNutrientsQuery } from './services/ingredients.api.js'
-import { Loading } from './Loading.jsx'
+import { useGetByIngridientsQuery, useGetByNutrientsQuery } from '../services/ingredients.api.js'
+import Loading from './Loading.jsx'
 import Header from './Header.jsx'
 import Footer from './Footer.jsx'
 import Modal from './Modal.jsx'
@@ -57,7 +57,7 @@ function App() {
                   <p className="p-1 sm:w-4/5 sm:text-base sm:font-normal sm:mx-auto sm:text-center md:w-full xlg:font-medium xlg:text-2xl">How do you prefer to find a recipe?</p>
                 </div>
                 <div className="flex flex-row justify-center text-base mb-9 pb-6 sm:justify-around sm:mb-6 sm:w-full sm:mx-auto sm:text-sm md:w-3/5 lg:w-4/5 md:justify-between lg:justify-around">
-                  <div className='p-2 bg-white/60 shadow-md sm:border sm:rounded-md sm:w-2/5 sm:text-center hover:scale-105 hover:bg-sky-100 lg:bg-transparent lg:w-2/5 lg:bg-blue-200 xlg:bg-sky-100 xlg:font-medium xlg:text-xl outline outline-offset-1 outline-blue-600'>
+                  <div className='p-2 bg-white/60 shadow-md sm:border sm:rounded-md sm:w-2/5 sm:text-center hover:scale-105 hover:bg-sky-100 lg:bg-transparent lg:w-2/5 lg:bg-blue-200 xlg:bg-sky-100 xlg:font-medium xlg:text-xl outline outline-offset-1 outline-indigo-200'>
                     <input
                       type="radio" 
                       value="ingridients" 
@@ -72,7 +72,7 @@ function App() {
                       Search by ingridients
                     </label>
                   </div>
-                  <div className='p-2 bg-white/60 shadow-md sm:border sm:rounded-md sm:w-2/5 sm:text-center hover:scale-105 hover:bg-sky-100 lg:bg-transparent lg:w-2/5 lg:bg-blue-200 xlg:bg-sky-100 xlg:font-medium xlg:text-xl outline outline-offset-1 outline-blue-600'>
+                  <div className='p-2 bg-white/60 shadow-md sm:border sm:rounded-md sm:w-2/5 sm:text-center hover:scale-105 hover:bg-sky-100 lg:bg-transparent lg:w-2/5 lg:bg-blue-200 xlg:bg-sky-100 xlg:font-medium xlg:text-xl outline outline-offset-1 outline-indigo-200'>
                     <input 
                       type="radio" 
                       value="nutrients" 

@@ -6,7 +6,7 @@ function About() {
   <div>
     <Header />
     <div className="aboutPage px-12 mb-4">
-      <div className="mt-4 mb-4">
+      <div className="my-2">
         <h1 className="text-4xl font-extrabold text-center	bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-violet-500">
           About app
         </h1>
