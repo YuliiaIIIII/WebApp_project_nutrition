@@ -3,7 +3,7 @@ function Component({ receipt, func }) {
   return (
     <div
       id="userRequest"
-      className="shadow-lg bg-indigo-50 w-10/12 block mx-0 rounded-xl outline outline-offset-1 outline-indigo-200 md:flex md:flex-row lg:w-11/12 xlg:w-11/12 xlg:flex-col xlg:w-4/5"
+      className="my-0 mx-auto shadow-lg bg-indigo-50 w-10/12 block mx-0 rounded-xl outline outline-offset-1 outline-indigo-200 md:flex md:flex-row lg:w-11/12 xlg:w-11/12 xlg:flex-col xlg:w-4/5"
       onClick={() => func(receipt.id)}
       >
       <div className="bg-no-repeat bg-cover rounded-md md:w-1/2 xlg:w-full">
