@@ -2,13 +2,12 @@ import { useGetRecipesInformationQuery } from './services/ingredients.api'
 
 function Modal({changeActive, recipeIdRequest}){
   const {data, isFetching, isError} = useGetRecipesInformationQuery(recipeIdRequest);
-  console.log(data)
   
   return(
     <div className="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
       <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
         <div className="fixed inset-0 z-10 overflow-y-auto">
-          <div className="flex min-h-full items-end justify-center p-6 text-center">
+          <div className="flex min-h-full items-center justify-center p-6 text-center">
             <div className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all">
               <div className="bg-indigo-100 px-4 pb-4 pt-5">
                 <div className="mt-3 text-center">

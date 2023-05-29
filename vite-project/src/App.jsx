@@ -3,7 +3,7 @@ import Component from './Component.jsx'
 import { useGetByIngridientsQuery, useGetByNutrientsQuery } from './services/ingredients.api.js'
 import { Loading } from './Loading.jsx'
 import Header from './Header.jsx'
-import Footer from './Footer.jsx';
+import Footer from './Footer.jsx'
 import Modal from './Modal.jsx'
 
 function category(categorySearch, serverRequestText) {
@@ -106,7 +106,7 @@ function App() {
         <div 
         className="bg-[url('./img/background.png')] bg-contain border-b-2 border-white  grid grid-cols-4 gap-x-6 gap-y-8 text-base py-4 px-3 cursor-pointer sm:grid-cols-1 sm:bg-orange-100 lg:grid-cols-2 lg:gap-x-0 xlg:grid-cols-4 lg:py-8 xlg:py-8"
         >
-          {(isFetching) ? <Loading /> : data.map((item) => <Component receipt={item} func={chooseReceipt} />)} 
+          {(isFetching) ? <Loading /> : data.map((item) => (<div key={item.id}><Component receipt={item} func={chooseReceipt} /> </div>))}
         </div>
         <Footer />
       </div>

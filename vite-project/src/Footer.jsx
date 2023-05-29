@@ -1,22 +1,24 @@
+import { Routes, Route, Link } from "react-router-dom"
+import About from "./About"
+
 function Footer(){
   return(
   <footer className="bg-gradient-to-t from-indigo-200 to-indigo-500 text-center">
     <div className='flex justify-center '>
     <div className='mt-3'>
-      <a 
+      <Link 
       className='p-1 mr-2 font-semibold underline xlg:text-xl hover:text-white hover:text-2xl'
-      href='#'
+      to='/#'
       >
       Contacts
-      </a>
+      </Link>
     </div>
     <div className='mt-3'>
-      <a 
-      className='p-1 font-semibold underline xlg:text-xl hover:text-white hover:text-2xl'
-      href='#'
-      >
-      About
-      </a>
+      <div>
+        <Link className="p-1 font-semibold underline xlg:text-xl hover:text-white hover:text-2xl" to="/about">
+        About
+        </Link>
+      </div>
     </div>
     </div>
     <div>

@@ -2,6 +2,7 @@ function Component({ receipt, func }) {
 
   return (
     <div
+      // key={receipt.id}
       id='userRequest' 
       className='shadow-lg bg-orange-50 w-10/12 block ml-auto mr-auto rounded-xl border-indigo-800 border-2 md:flex md:flex-row lg:w-11/12 xlg:w-11/12 xlg:flex-col xlg:w-4/5'
       onClick={() => func(receipt.id)}
@@ -11,7 +12,7 @@ function Component({ receipt, func }) {
         />
       </div>
       <div className="mt-2 text-center md:w-1/2 md:flex md:items-center md:flex-col md:justify-center xlg:w-full">
-        <p className='px-4 py-2 font-normal text-lg md:text-2xl hover:font-medium'>{receipt.title}</p>
+        <p className='px-4 py-2 font-normal text-md md:text-2xl hover:font-medium'>{receipt.title}</p>
       </div>
     </div>
   )

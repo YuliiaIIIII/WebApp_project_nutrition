@@ -1,31 +1,42 @@
 import Footer from "./Footer";
 import Header from "./Header";
 
-function AboutPage(){
+function About() {
   return(
   <div>
     <Header />
-    <div className="aboutPage">
-      <div className="">
-        <h1 className="">
-          Perfect nutrition - about app
+    <div className="aboutPage px-12 mb-4">
+      <div className="mt-4 mb-4">
+        <h1 className="text-4xl font-extrabold text-center	bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-violet-500">
+          About app
         </h1>
       </div> 
-      <div className="">
-        <p>
-        This web-application is designed to find recipes for cooking.
-        There is an input field on the initial page of the application. Searching for recipes can be done both by individual ingredients and by the nutritional value of the finished dish.
-        Searching for recipes by ingredients is done by default. The search category can be switched using the checkboxes. To search for recipes by ingredients, you need to check the "Search by ingridients" category box. To search for recipes by nutritional value, you need to check the "Search by nutrients" category box. 
-        After selecting a category, you can search for recipes by clicking the button "Find a recipe".
-        The number of recipes displayed on the page is 10.
-        To get detailed information about the recipe - click on the image or the name of the desired recipe.
-        To close the modal view window - click the button "Cancel".
-        At the end of the web-application page you can find a link to the author of the project.
+      <div text-justify p-6>
+      <img className="float-left w-52" src="./src/img/food1.jpg"/>
+      <p className="indent-4">
+          This web-application is designed to find recipes for cooking.
         </p>
+        <p className="indent-4">
+          There is an input field on the initial page of the application. Searching for recipes can be done both by individual ingredients and by the nutritional value of the finished dish.
+        </p>
+        <p className="indent-4">
+          Searching for recipes by ingredients is done by default. The search category can be switched using the checkboxes. To search for recipes by ingredients, you need to check the "Search by ingridients" category box. To search for recipes by nutritional value, you need to check the "Search by nutrients" category box. 
+        </p>
+        <p className="indent-4">
+          After selecting a category, you can search for recipes by clicking the button "Find a recipe". The number of recipes displayed on the page is 10.
+        </p>
+        <p className="indent-4">
+          To get detailed information about the recipe - click on the image or the name of the desired recipe. To close the modal view window - click the button "Cancel".
+        </p>
+        <p className="indent-4">
+          At the end of the web-application page you can find a link to the author of the project.
+        </p>
+
       </div>
+
     </div>
     <Footer />
   </div>
   )
 }
-export default AboutPage
+export default About
